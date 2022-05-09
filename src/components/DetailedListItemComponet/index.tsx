@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { IPerson } from "../../interfaces/services/person.interface";
 import ContactFormComponent from "../ContactFormComponent";

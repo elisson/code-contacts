@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React from "react";
 import styles from "./PersonAvatarComponent.module.scss";
 import useAvatar from "../../hooks/useAvatar";
 

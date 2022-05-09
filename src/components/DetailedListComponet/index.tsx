@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import { TChildren } from "../../interfaces/children.type";
 import { IPerson } from "../../interfaces/services/person.interface";
 import DetailedListItemComponet from "../DetailedListItemComponet";
-import PersonAvatarComponent from "../PersonAvatarComponent";
 import styles from "./DetailedListComponet.module.scss";
 
 interface IDetailedListComponetProp {

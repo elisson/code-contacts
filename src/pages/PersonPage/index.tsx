@@ -1,16 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
-import _ from "underscore";
-import DetailedListComponet from "../../components/DetailedListComponet";
 import DetailedListItemComponet from "../../components/DetailedListItemComponet";
-import EmptyResultComponent from "../../components/EmptyResultComponent";
 import Loading from "../../components/LoadingComponent";
 import { useQuery } from "../../hooks/useQuery";
-import { TChildren } from "../../interfaces/children.type";
 import { IPerson } from "../../interfaces/services/person.interface";
-import { getAll as getAllPerson, getOne } from "../../services/personService";
-import styles from "./PersonPage.module.scss";
+import { getOne } from "../../services/personService";
 
 export default function PersonPage(props: any): JSX.Element {
   const [isLoading, setIsLoading] = useState<boolean>(true);

@@ -3,7 +3,6 @@ import _ from "underscore";
 import DetailedListComponet from "../../components/DetailedListComponet";
 import EmptyResultComponent from "../../components/EmptyResultComponent";
 import LoadingComponent from "../../components/LoadingComponent";
-import { TChildren } from "../../interfaces/children.type";
 import { IPerson } from "../../interfaces/services/person.interface";
 import { getAll as getAllPerson } from "../../services/personService";
 import styles from "./MainPage.module.scss";
