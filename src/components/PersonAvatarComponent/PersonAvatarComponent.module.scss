@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  place-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.avatar {
+  border-radius: 50%;
+  box-shadow: 0 0 1px var(--shadow);
+}

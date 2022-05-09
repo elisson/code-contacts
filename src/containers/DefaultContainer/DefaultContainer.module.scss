@@ -1,3 +1,56 @@
 .container {
-  background-color: var(--gray);
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  justify-items: center;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40vw;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 0;
+    background: bottom/contain url("../../assets/svg/illustration/undraw_mobile_user_re_xta4.svg") no-repeat;
+  }
+}
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+.home,
+.new {
+  padding: 1rem 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  color: var(--text-color);
+  span {
+    transition-duration: 200ms;
+    opacity: 0;
+  }
+  &:hover span {
+    opacity: 1;
+  }
+  i {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  i::before {
+    position: absolute;
+    content: "";
+    width: inherit;
+    height: inherit;
+    filter: invert(68%) sepia(95%) saturate(4194%) hue-rotate(136deg)
+      brightness(98%) contrast(103%);
+  }
+}
+.home > i::before {
+  background: center/contain url("../../assets/svg/icons/list.svg") no-repeat;
+}
+.new > i::before {
+  background: center/contain url("../../assets/svg/icons/add.svg") no-repeat;
 }

@@ -1,0 +1,21 @@
+.inputContainer {
+  display: flex;
+  place-items: center;
+  background-color: #fff;
+  box-shadow: 1px 2px 0px 0px var(--shadow);
+  border-radius: 0.2rem;
+  margin: 1rem 0;
+  label {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-weight: bold;
+    min-width: 12rem;
+    color: #fff;
+  }
+}
+.error {
+  color: red;
+  font-size: 0.8rem;
+  background: var(--background-color);
+  text-align: center;
+}

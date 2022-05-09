@@ -1,3 +1,6 @@
 .container {
-  background-color: var(--gray20);
+  min-width: 35vw;
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--shadow);
+  }
 }
