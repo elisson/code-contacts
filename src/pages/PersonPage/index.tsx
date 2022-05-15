@@ -41,8 +41,6 @@ export default function PersonPage(props: any): JSX.Element {
   if (isLoading || !person) return <Loading />;
 
   return (
-    <>
-      <DetailedListItemComponet person={person} editMode />
-    </>
+    <DetailedListItemComponet person={person} editMode />
   );
 }

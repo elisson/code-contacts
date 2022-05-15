@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import _ from "underscore";
 import DetailedListComponet from "../../components/DetailedListComponet";
 import EmptyResultComponent from "../../components/EmptyResultComponent";
@@ -68,9 +69,9 @@ export default function MainPage(props: any): JSX.Element {
         />
       </div>
       {showCreate && (
-        <a href={`/#/contacts?name=${searchTerm}`} className={styles.new}>
+        <Link to={`/contacts?name=${searchTerm}`} className={styles.new}>
           Adicionar <span>"{searchTerm}"</span> como contato
-        </a>
+        </Link>
       )}
       {isLoading ? (
         <LoadingComponent />
